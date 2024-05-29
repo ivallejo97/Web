@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestro proyecto</title>
+    <link rel="shortcut icon" href="img/logo_proyecto.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="UI-Menu-master/menu.css">
+    <link rel="stylesheet" href="UI-Input-master/input.css">
+    <link rel="stylesheet" href="UI-Accordion-master/accordion.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+
+      p{
+        margin-left: 10%; 
+        margin-right: 10%;
+        font-size: 1.02em;
+      }
+      h1{
+        margin-top: 5%;
+      }
+      h2{
+        margin: 0.5%;
+      }
+      h3{
+        margin: 0.5%;
+      }
+      img{
+        margin: 1%;
+      }
+      /* General styling for the container and columns */
+      .container-indice {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #f4f4f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-top: 2%;
+      }
+
+      .column {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      /* Heading styles */
+      .column h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        color: #334961;
+        text-align: center;
+        border-bottom: 2px solid #d1d9e0; /* Línea decorativa debajo del h2 */
+        padding-bottom: 8px;
+      }
+
+      /* List styles */
+      .column .indice {
+        list-style: none;
+        padding: 0;
+      }
+
+      .column .indice .li-indice {
+        margin-bottom: 8px;
+      }
+
+      /* Link styles */
+      .column .indice .li-indice a {
+        text-decoration: none;
+        color: #006bfa;
+        font-size: 1em;
+        display: block;
+        padding: 8px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s; /* Transición para el hover */
+      }
+
+      .column .indice .li-indice a:hover {
+        background-color: #006bfa; /* Color de fondo al pasar el cursor */
+        color: #ffffff; /* Color del texto al pasar el cursor */
+      }
+      .ui.stackable.menu{
+      margin: 0%;
+      width: auto;
+      height: auto;
+      position: static;
+      display: flex;
+      justify-content: center;
+      background-color: #006bfa;
+      border-radius: 0px;
+      }
+    </style>
+
+  </head>
+<body>
+
+        <header class="barraSuperior"> 
+          <div class="foto">
+              <img id="logo" src="img/logo_proyecto.png" alt="Logo proyecto">
+          </div>
+          
+          <h1 id="nombre" style="margin: 0%;">Puig Ticket</h1>
+
+          <div class="foto">
+              <img id="puig" src="img/logopuig.png" alt="Logo Puig Castellar">
+          </div>
+        </header>
+
+        <div class="ui stackable menu" static>
+          <a href="inicio.html" class="item">Inicio</a>
+          <a href="versiones.html" class="item">Aplicaciones</a>
+          <a href="reglas.html" class="item">Reglas GLPI</a>
+          <a href="manuales.html" class="item">Manuales de uso</a>
+          <a href="descarga.html" class="item">Descargar</a>
+          <a href="blog.html" class="item">Nuestro proyecto</a>
+        </div>
+
+        <div class="contenido-pagina">
+
+          <div class="imagen-fondo">
+            <div class="fondo" style="background-color: #334961;">
+              <h1 class="text">Nuestro proyecto </h1>
+              <h2 class="textP" style="margin-top: 17%;">Conoce todo el proceso de desarrollo de nuestro proyecto aqui</h2>
+            </div>
+          </div>
+
+          <div class="container-indice">
+            <div class="column">
+              <h2>Idea</h2>
+              <ul class="indice">
+                <li class="li-indice"><a href="#idea">La Idea</a></li>
+                <li class="li-indice"><a href="#como-surge">¿Como surge?</a></li>
+                <li class="li-indice"><a href="#elementos-necesarios">¿Que necesitamos?</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Tecnología</h2>
+              <ul class="indice">
+                <li class="li-indice"><a href="#eleccion">Elección de la tecnología</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Desarrollo</h2>
+              <ul class="indice">
+                <li class="li-indice"><a href="#desarrollo">Desarrollo e integración</a></li>
+                <li class="li-indice"><a href="#pasos">Paso a paso de la instalación</a></li>
+                <li class="li-indice"><a href="#resumen">Resumen del entorno</a></li>
+                <li class="li-indice"><a href="#automatizacion">Automatización</a></li>
+                <li class="li-indice"><a href="#web">Página Web</a></li>
+                <li class="li-indice"><a href="#pruebas-desarrollo">Pruebas y problemas durante el desarrollo</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Pruebas</h2>
+              <ul class="indice">
+                <li class="li-indice"><a href="#pruebas-usabilidad">Pruebas y usabilidad</a></li>
+                <li class="li-indice"><a href="#configuracion-glpi">Configuración de GLPI</a></li>
+                <li class="li-indice"><a href="#manuales">Manuales</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Defensa</h2>
+              <ul class="indice">
+                <li class="li-indice"><a href="#defensa">Defensa</a></li>
+                <li class="li-indice"><a href="#objetivos">Objetivo</a></li>
+                <li class="li-indice"><a href="#justificacion">Justificación</a></li>
+                <li class="li-indice"><a href="#metodologia">Metodología</a></li>
+                <li class="li-indice"><a href="#resultados">Resultados obtenidos</a></li>
+                <li class="li-indice"><a href="#mejoras">Mejoras a futuro</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="div-indice">
+
+          
+
+          <h1 id="idea" style="margin-top: 5%;">1. La idea</h1>
+          <h2 id="como-surge">¿Como surge la idea?</h2>
+          <p>
+            La idea principal de nuestro proyecto era crear y configurar un servicio de hosting junto a un sistema de ticketing de 
+            incidencias para que los usuarios del servicio de hosting puediesen reportar si tenian algún problema para guardar sus 
+            sitios web, o cualquier otro tipo de incidencia, en resumen la idea era montar un servidor de hosting e integarlo con un 
+            sistema de ticketing de incidencias.
+            <br><br>
+            Pero una vez presentada la propuesta y debido a la recomendación de algunos de los tutores de proyecto, nos recomendaron 
+            quedarnos con tan solo una de las dos opciones expuestas, servicio de hosting o sistema de tickets de incidencias. 
+            <br><br>
+            Después reunirnos y debatir sobre que opción sería más interesante de implementar y configurar decidimos que el sistema de 
+            ticketing era mejor opción que el servicio de hosting, por lo cual nuestro proyecto trata sobre la implementación y 
+            configuración de un servicio de ticketing en una máquina ubuntu que actuara como servidor centralizado en la red. 
+          </p>
+          <img src="img/ideaBlog.png" alt="" width="30%" >
+
+
+          <h2 id="elementos-necesarios">¿Que necesitamos?</h2>
+          <p>
+            Una vez ya sabiamos la idea del proyecto, el siguiente paso era saber lo que necesitariamos para instalar 
+            un sistema de ticketing en la máquina servidor ubuntu, tras consultar en varias páginas web pudimos ver que aparte de una 
+            máquina ubuntu que actue como servidor, necesitariamos un servidor web, en nuestro caso Apache2 para poder acceder a la 
+            herramienta de ticketing via web, una base datos MySQL para tener un entorno en el que almacenar todos los datos de la 
+            herramienta de tickets, y por ultimo la propia herramienta de gestión de tickets de incidencias, la cual conoceremos en los 
+            siguientes puntos.
+          </p>
+          <img src="img/EsquemaBLOG1.png" alt="" width="50%">
+
+          <!--------------------------------------------------------------------------------------------------------------------------------->
+          <h1 id="eleccion" style="margin-top: 5%;">2. Elección de la tecnología</h1>
+          <p style="margin-top: 1%;">
+            Una vez ya teniamos la idea del proyecto y lo que necesitamos para desarrollarlo, el siguiente paso era escoger la tecnología 
+            de ticketing con la que la que llevar a cabo el proyecto. 
+            <br><br>
+            Tras probar con varias tecnologias como OsTicket, Zammad, Uvesk y Hesk finalmente decidimos quedarnos con GLPI.
+            <br><br>
+            Tras probar todos estos programas y en comparación a GLPI consideramos que GLPI es una herramienta bastante más completa ya 
+            que aparte de poder montar un sistema de ticketing eficiente, se pueden hacer más cosas como registrar todos los dispositvos 
+            finales de una red (ordenadores, impresoras, portatiles, etc) lo que ayuda a poder tener un mayor control sobre la 
+            infraestructura de una organización,también se puede implementar el acceso a la plataforma mediante correo electronico, 
+            active directory, LDAP, es decir es una herramienta que dispone de una gran capacidad de integración con otros sistemas. 
+            <br><br>
+            En general GLPI es una herramienta con más funcionalidades,una mayor integración con otros servicios, una gran capacidad de 
+            personalización gracias a sus plugins, y aparte es más escalable que las otras opciones contempladas. 
+          </p>
+          <img src="img/tecnologias.png" alt="" width="50%">
+
+          <!--------------------------------------------------------------------------------------------------------------------------------->
+
+          <h1 id="desarrollo" style="margin-top: 5%;">3. Desarrollo e integración</h1>
+          <p style="margin-top: 1%;">
+            En este punto, ya sabíamos que necesitábamos un servidor web (Apache2) junto a una base de datos (MySQL) para poder 
+            implementar la herramienta de ticketing (GLPI). El siguiente paso era comenzar a instalar, implementar y configurar 
+            el entorno.
+            
+            <!-- En este punto ya sabemos que necesitamos un servidor web (Apache2) junto a una base de datos (MySQL) para poder implementar  
+            la herramienta de ticketing (GLPI), el siguiente pasos es empezar a instalar, implementar y configurar el entorno. -->
+            <br><br>
+            La idea era tener una máquina virtual Ubuntu que actuara como servidor, en la que estuvieran todos los programas 
+            (Apache2, MySQL y GLPI). Y una vez configurado cada programa en el servidor, poder acceder a GLPI vía web desde cualquier 
+            cliente, creando así un servidor centralizado al cual puedan acceder los usuarios de la red.
+            
+            <!-- La idea es tener una máquina virtual de ubuntu que actue como servidor, en el que tener todos los programas (Apache2, MySQL 
+            y GLPI), y una vez configurado cada programa en el servidor poder acceder a GLPI via web desde cualquier cliente, creando
+            así un servidor centralizado al cual puedan acceder los usuarios de la red. -->
+          </p>
+
+          <h2 id="pasos" style="margin-top: 2%;">Paso a paso de la instalación</h2>
+          <p>
+            Como mencionamos anteriormente, necesitamos un servidor web junto a una base de datos MySQL, por lo cual, antes de empezar 
+            a instalar GLPI, primero debemos instalar y configurar Apache2 y MySQL.
+            <!-- Como hemos comentado anteriormente necesitamos un servidor web junto a una base de datos MySQL, por lo cual antes de empezar 
+            a instalar GLPI primero debemos instalar y configurar Apache2 y MySQL. -->
+          </p>
+
+          <h3><u>Apache2</u></h3>
+          <p> 
+            En primer lugar, instalamos Apache2 junto a algunos módulos PHP adicionales necesarios para que el servidor web pueda 
+            interpretar los ficheros de GLPI y mostrar su contenido vía web.
+
+            <!-- En primer lugar hemos instalado Apache2 junto a algunos modulos PHP adicionales necesarios para que el servidor web pueda 
+            interpretar los ficheros de GLPI y mostrar el contenido de GLPI vía web. -->          
+          </p>
+          <img src="img/pagina-defecto-apache2.png" alt="" width="65%">
+
+          <h3><u>MySQL</u></h3>
+          <p>
+            Con Apache2 ya instalado, el siguiente paso fue instalar MySQL y crear una nueva base de datos que se usa para guardar 
+            los datos de GLPI, en nuestro caso, creamos una base de datos llamada glpi y un usuario llamado admin_glpi, que sera 
+            el propietario de la base de datos y tendra todos los privilegios para dicha base de datos.
+
+            <!-- Con Apache2 ya instalado, el siguiente paso es instalar MySQL y crear una nueva base de datos que se usara para 
+            guardar los datos de GLPI, en nuestro caso lo que hemos hecho a sido crear una base de datos llamada glpi y un usuario llamado
+            admin_glpi que sera el propietario de la base de datos y tendrá todos los privilegios para esa base de datos. -->
+          </p>
+          <img src="img/MySQL-Blog.png" alt="" width="55%">
+
+          <h3><u>GLPI</u></h3>
+          <p>
+            El último paso fue descargar la última versión de GLPI e instalar el programa en el servidor web, para ello, descargamos la 
+            última versión de GLPI en el sistema, movimos los archivos descargados al servidor web y comenzamos la instalación de GLPI 
+            vía web. Durante la instalación, seguimos algunos pasos básicos como sincronizar la base de datos con GLPI, comprobar los 
+            requisitos necesarios para instalar GLPI y, de manera opcional, solucionar algunos requisitos que pueden comprometer la 
+            seguridad del sistema.
+
+            <!-- El ultimo paso es descargar la ultima versión de GLPI e instalar el programa en el servidor Web, para eso hay que descargar
+            la ultima versión de GLPI en el sistema, mover los archivos descargados al servidor web y comenzar la instalación de GLPI vía
+            web, durante la instalación deberemos seguir algunos pasos basicos como sincronizar la base de datos con GLPI, comprobar
+            los requistisos necesarios para instalar GLPI y de manera opcional solucionar algunos requistisos que pueden comprometer la 
+            seguridad del sistema. -->
+            
+            <br><br>
+            Puedes obtener más información sobre como instalar GLPI en ubuntu en la sección de manuales de la página web. 
+          </p>
+          <img src="img/instalacionGLPI7.png" alt="" width="50%" style="border-radius: 10px;">
+          <br>
+
+          <h3><u>Bind9</u></h3>
+          <p>
+            Después de instalar GLPI, nuestra siguiente idea era que los clientes o usuarios de la organización pudieran acceder al 
+            sistema a través de un nombre de dominio y no por la dirección IP del servidor o por localhost. Por eso, decidimos crear 
+            una zona DNS con Bind9 para que los usuarios pudieran acceder a la web de GLPI mediante un nombre de dominio, facilitando 
+            así el acceso al sistema.
+            
+            <!-- Después de conseguir instalar GLPI, nuestra siguiente idea era que los clientes o usuarios de una organización pudiesen 
+            acceder al sistema a través de un nombre de dominio y no por la dirección ip del servidor o por localhost, por lo cual 
+            decidimos crear una zona DNS con Bind9 para que los usuarios pudiesen acceder a la web de GLPI con un nombre de dominio, 
+            facilitando al acceso al sistema. 
+
+            Después de instalar GLPI, nuestra siguiente idea es que los clientes o usuarios de la organización que instale GLPI 
+            puedan acceder al sistema a través de un nombre de dominio y no por la dirección IP del servidor o por localhost,
+            es por eso por lo que hemos decidido crear una zona DNS con Bind9 para que los usuarios puedan acceder a la web de GLPI 
+            mediante un nombre de dominio, facilitando así el acceso al sistema. --> 
+          </p>
+          <img src="img/dns.png" alt="" width="50%" style="border-radius: 10px;">
+
+          <h3><u>Seguridad</u></h3>
+          <p>
+
+            En este punto, ya habíamos instalado GLPI, creada la zona DNS con el nombre de dominio y todo el entorno lista para poder 
+            acceder a la página web, sin embargo, al acceder a GLPI nos dimos cuenta de que la página web era insegura, por lo que 
+            decidimos generar un certificado de seguridad autofirmado y configurarlo en el servidor web de Apache.
+            <br><br>
+            De esta manera, añadimos un punto de seguridad adicional al servidor web, aunque al acceder a la web de GLPI aparece un 
+            mensaje de riesgo potencial debido a que el certificado es autofirmado, aunque esto es suficiente para nuestro servidor, 
+            ya que esta pensado para usarse en una red local.
+            
+            <!-- En este punto en el que ya hemos creado la zona DNS con el nombre de dominio con el que se accedera la página web nos dimos 
+            cuenta que la página web era insegura, por lo que decidimos generar un certificado de seguridad autofirmado y configurarlo 
+            en el servidor web de Apache para que de esta manera se añadiese un punto de seguridad adicional en el servidor web, aunque 
+            de esta manera al acceder al servidor aparezca un mensaje de riesgo potencial, esto se debe a que el certificado es 
+            autofirmado, aunque para nuestro servidor ya es suficiente ya que este esta pensado para usarse en una red local. 
+          
+            En este punto, ya hemos instalado GLPI y creado la zona DNS con el nombre de dominio para acceder a la página web, pero al 
+            acceder a GLPI nos hemos dado cuenta de que la página web es insegura, por lo que hemos decidido generar un certificado de 
+            seguridad autofirmado y configurarlo en el servidor web de Apache. 
+            <br><br>
+            De esta manera, añadimos un punto de seguridad adicional al servidor web, aunque al acceder al servidor aparece un mensaje
+            de riesgo potencial debido a que el certificado es autofirmado, esto es suficiente para nuestro servidor, ya que está pensado 
+            para usarse en una red local. -->         
+          </p>
+          <img src="img/servidor-seguro.png" alt="" width="50%" style="border-radius: 10px;">
+
+          <h2 id="resumen" style="margin-top: 2%;">Resumen del entorno creado</h2>
+          <p>
+            Como resumen del entorno montado podemos decir que tenemos un máquina virtual de ubuntu que actuara como servidor en una 
+            red, esa máquina tiene instalado Apache2, MySQL y GLPI, además también tiene configurado una zona DNS en la cual esta definida
+            la página de GLPI para que los clientes de la red se puedan conectar a GLPI por el nombre de dominio, y en el servidor Apache2
+            se ha configurado un certificado autofirmado para añadir un punto de seguridad a la aplicación web de GLPI. 
+          </p>
+
+          <h2 id="automatizacion" style="margin-top: 2%;">Automatización</h2>
+          <p>
+            Ahora que ya hemos conseguido instalar GLPI en el servidor web de Apache2 junto a la base de datos MySQL, nos propusimos crear 
+            un script que automatizase todo el proceso de instalación y configuración de GLPI para cualquier máquina ubuntu, nuestro 
+            objetivo era crear un script que una vez ejecutado, dejara GLPI listo para su uso, de esta manera cualquier usuario que
+            disponga del script puede instalar GLPI sin la necesidad de tener conocimientos avanzados de Apache o MySQL.  
+            <br><br>
+            Para conseguir automatizar todo el proceso de instalación tan solo teniamos que replicar los comandos que habiamos 
+            ejecutado en la instalación de Apache y MySQL añadiendo algún comando adicional y modificando algún otro comando, y también 
+            teniamos que encontrar la manera de instalar GLPI por CLI, para ello consultamos la documentación oficial de GLPI en la 
+            siguiente página que explica como instalar GLPI por CLI: 
+            <a href="https://glpi-install.readthedocs.io/en/latest/command-line.html" target="_blank">Instalar GLPI por CLI</a>
+          </p>
+          
+          <img src="img/automatizarBlog.png" alt="" width="50%" height="20%" style="border-radius: 10px;">
+
+          <p>
+            Para automatizar todo el proceso de instalación de GLPI y la preparación de la máquina que actuara como servidor centralizado en 
+            la red hemos utilizado dos tecnologias diferentes: 
+          </p>
+
+          <br>
+
+          <h3><u>Script de Bash</u></h3>
+          <p>
+            La principal tecnologia con la que hemos automatizado el proceso de instalación de GLPI son los scripts de bash, hemos creado
+            un script en el cual se encuentran todos los comandos necesarios para la instalación y configuración automatica de GLPI en
+            máquinas ubuntu, de esta manera una vez ejecutado el script, GLPI ya estara listo para su uso. 
+          </p>
+
+          <br><br>
+          
+          <h3><u>Ansible</u></h3>
+          <p>
+            Otra de las tecnologias con las que hemos automatizado la configuración del servidor GLPI es ansible.
+            <br><br>
+            Si con el script de bash se prepara todo el entorno del servidor web y se instala y configura GLPI para que este listo para 
+            usarse, con Ansible hemos creado un playbook con el que configurar el servidor DNS en la red de manera sencilla en una interfaz
+            intuitiva en la que se van solicitando distintos parametos como el nombre de dominio que se quiere configurar en la zona DNS y 
+            la IP del servidor en el que se configurara la zona DNS.  
+            <br><br>
+            También hemos usado Ansible para ejecutar un script en todas las máquinas clientes que sincronizara todas las máquinas cliente
+            con GLPI, a su mismo tiempo el servidor GLPI guardara esas máquinas en su inventario, de esta manera se puede conseguir un 
+            mayor control sobre la infraestructura de la red. 
+          </p>
+
+
+          <h2 id="web">Página web</h2>
+          <p>
+            Uno de los pilares fundamentales de nuestro proyecto es la página web, a lo largo del desarrollo del proyecto hemos
+            ido documentando todos los programas y pasos necesarios para instalar y configurar GLPI en una máquina ubuntu, pero creemos
+            que no es suficiente con exponer nuestro proyecto ante el jurado y ya esta, es por eso que hemos creado esta página web
+            en la que el jurado del proyecto y cualquier otro usuario de internet que acceda a la página pueda obtener conocimientos básicos
+            sobre lo que es GLPI, para que sirve, sus caracteristicas y demás... 
+            <br><br>
+            Pero el principal objetivo de esta página web es que el jurado del proyecto pueda instalar GLPI de manera automatica a través 
+            de los scripts de instalación que hemos creado y puedan configurar GLPI de la misma manera que lo hemos hecho nosotros gracias
+            a los manuales de configuración y las reglas que hemos creado y extraido de GLPI, estas opciones están disponibles en los 
+            apartados manuales y Descargar Reglas en la página web, siguiendo nuestros manuales el jurado del proyecto podrá ver y experimentar
+            con el sistema montado por nosotros en GLPI. 
+          </p>
+          <img src="img/pagina-web.webp" alt="" width="50%" style="border-radius: 10px;">
+
+
+          <h2 id="pruebas-desarrollo">Pruebas y problemas durante el desarrollo</h2>
+          <h3 style="margin-top: 2%;"><u>Instalación manual</u></h3>
+          <p>
+            Durante la instalación manual de GLPI en ubuntu tuvimos que realizar una serie de pruebas y enfrentar algunos problemas para
+            finalmente poder conseguir instalar GLPI en el servidor.
+            <br><br>
+            Para instalar Apache2, MySQL y PHP no hubo ningún tipo de problema, los primeros problemas aparecieron a la hora de empezar
+            a instalar GLPI , al iniciar la instalación vía web nos surgió un problema de permisos que nos impedía comenzar a instalar 
+            GLPI, para solucionarlo tuvimos que cambiar el propietario de los archivos descargados de GLPI a www-data.
+          </p>
+          <img src="img/problemasInstalacionGlpi.png" alt="" width="50%" style="border-radius: 10px;">
+          <img src="img/solucionInstalacion1.png" alt="" width="50%">
+
+          <p>
+            Una vez solucionado este problema ya podiamos comenzar la instalación, y es aquí cuando aperece el siguiente problema, GLPI
+            nos pedía tener instalados en el sistema algunos modulos y extensiones de PHP necesarios para el correcto funcionamiento
+            de GLPI en la máquina servidor, para solucionar este problema instalamos todos esos modulos y extensiones de PHP 
+            requeridos y continuamos con la instalación. 
+          </p>
+          <img src="img/problemasInstalacionGlpi2.png" alt="" width="50%" style="border-radius: 10px;">
+          <p>
+            Tras solucionar el problema de los modulos y extensiones requeridos, el siguiente paso era sincronizar la base de
+            datos MySQL con GLPI, como anteriormente solo habiamos instalado MySQL y nada más, tuvimos que crear una base de datos y un 
+            usuario para poder configurar la conexión a MySQL y sincronizar GLPI con la base de datos creada. 
+          </p>
+          <div style="display: flex; justify-content: center;">
+            <img src="img/problemasInstalacionGlpi3.png" alt="" width="40%" style="border-radius: 10px; margin: 1%;">
+            <img src="img/problemasInstalacionGlpi4.png" alt="" width="40%" style="border-radius: 10px; margin: 1%;">
+          </div>
+          <p>
+            Durante el resto de la instalación no surgió ningún problema más y pudimos completar la instalación de manera 
+            correcta, pero queriamos tener claro todos los pasos para que no surgieran errores durante la instalación, por lo que
+            decidimos crear varias máquina más en las que ir probando instalar GLPI pero realizando antes todas las acciones que
+            solucionaron los problemas durante la primera instalación.
+            <br><br>
+            Tras probar con algunas máquinas pudimos corroborar que si antes de comenzar a instalar GLPI, cambiamos los permisos 
+            de los archivos descargados, instalamos los modulos y extensiones de PHP y creamos una base de datos y un usuario en MySQL, 
+            no habrá ningún problema a la hora instalar GLPI.
+          </p>
+
+
+
+          <h3 style="margin-top: 5%;"><u>Instalación automatica</u></h3>
+          <p>
+            Durante la preparación del script que automatiza todo el proceso de instalación de GLPI en ubuntu tuvimos que realizar más
+            pruebas y enfrentar más problemas y errores que durante la instalación manual.
+            <br><br>
+            Nuestra estrategia para desarrollar el script era replicar los comandos que habiamos ejecutado durante la instalación manual,
+            <br><br>
+            Pero hubo algunos comandos que no pudimos replicar en el script, en concreto los de MySQL, ya que cuando ejecutabamos los 
+            comandos SQL antes de hacerlo accediamos a la linea de comandos de MySQL.
+            <br><br>
+            Para poder ejecutar los comandos sin la necesidad de acceder a la linea de comandos teniamos que encontrar alguna opción o 
+            parametro de MySQL con el que poder crear la base de datos y el usuario sin la necesidad de acceder a la CLI de MySQL,
+            tras consultar la documentación de MySQL encontremos el parametro -e, que nos permitia ejecutar comandos SQL directamente 
+            desde la línea de comandos sin necesidad de entrar en la linea de comandos de MySQL.
+            <br><br>
+            Finalmente tras modificar los comandos de la configuración de la base de datos y usuario de MySQL en el script, así quedan
+            los comandos una vez modificados:
+          </p>
+
+          <img src="img/comandosMySQL.png" alt="" width="50%" style="border: 1px solid black;">
+
+          <p>
+            Después de encontrar la solución a los comandos SQL, necesitabamos encontrar la manera de instalar GLPI a través de la linea
+            de comandos, consultando la documentación de GLPI pudimos encontrar la manera de configurar la instalación y poder instalar
+            GLPI en el sistema con tan solo un comando, gracias a esto aparentemente ya podriamos automatizar el proceso de instalación. 
+          </p>
+
+
+          <p>
+            Sin embargo cuando ejecutamos el script para comprobar si GLPI se instalaba automaticamente, al ir al navegador para 
+            acceder a GLPI nos aparecia el siguiente error: 
+          </p>
+
+          <img src="img/errorInstalación.png" alt="" width="50%">
+
+          <p>
+            Estuvimos probando el script en otras máquinas por si el error se encontraba en la máquina en la que lo habiamos ejecutado,
+            pero tras probar el script en varias máquinas observamos que el error seguía apareciendo.  
+            <br><br>
+            Tras analizar el script que habiamos creado, la unica manera que se nos ocurrio de solucionar el error fue cambiar el orden
+            en el que se asignaban los permisos a los archivos de GLPI, originalmente en el script los permisos a los archivos se 
+            asignaban antes de que se instalase GLPI como en la instalación manual, pero en el script para que la instalación funcionase
+            de manera correcta los permisos se debian asignar después de instalar GLPI. 
+          </p>
+
+          <p><b>Orden original</b></p>
+          <img src="img/instalacionOrden1.png" alt="" width="50%" style="border: 1px solid black;">
+
+          <p><b>Orden modificado</b></p>
+          <img src="img/instalacionOrden2.png" alt="" width="50%" style="border: 1px solid black;">
+
+          <p>
+            Con estos problemas ya solucionados GLPI ya se instala de manera automatica en cualquier sistema ubuntu en el que se 
+            ejecute el script, pero al instalarse cuando se accede a GLPI salen una serie de recomendaciones de seguridad fáciles
+            de solucionar modificando algunos archivos.
+            <br><br>
+            Tras buscar alguna herramienta con la que poder modficar archivos en ubuntu encontremos la herramienta sed, una vez 
+            consultado su funcionamiento hemos usado esta herramienta para modificar algunos archivos y resolver esas recomendaciones,
+            al añadir esos comandos al script nos aseguramos de que ya no salgan estas sugerencias una vez instalado GLPI. 
+          </p>
+          <img src="img/instalacionGLPI9.png" alt="" width="50%" style="border: 1px solid black;">
+          <br>
+          <p>
+            Una vez ya solucionado este ultimo contratiempo no surgieron más problemas para conseguir que el script automatizase
+            todo el proceso de instalación de GLPI y configuración del servidor.
+          </p>
+          <br>
+          <p>
+            Para poder conseguir que el script automatizase todo el proceso de instalación de GLPI y configuración del servidor
+            ubuntu, tuvimos que realizar varias pruebas creando varias máquinas virtuales ubuntu en las que ibamos ejecutando el 
+            script hasta que finalmente la instalación se realizase de manera correcta.
+          </p>
+          <img src="img/pruebasGLPI.png" alt="" width="50%" style="border-radius: 10px;">
+
+          <!--------------------------------------------------------------------------------------------------------------------------------->
+
+          <h1 id="pruebas-usabilidad">4. Pruebas y usabilidad</h1>
+
+          <h2 id="configuracion-glpi" style="margin-top: 3%;">Configuración de GLPI</h2>
+          <p>
+            Ahora que ya tenemos listo el servidor ubuntu con el entorno preparado para usar GLPI hay que empezar a configurar el 
+            sistema GLPI para sacarle el máximo rendimiento a esta herramienta.
+            <br><br>
+            La configuración de GLPI se va a basar en diferenetes apartados: 
+              <br><br>
+              - Creación de usuarios y grupos con distintos privilegios para la creación y el manejo de tickets de incidencias. 
+              <br><br>
+              - Configuración de tickets como plantillas determinadas para crear tickets, categorias ... 
+              <br><br>
+              - Uso del agente GLPI para sincronizar los clientes de la red con el servidor GLPI. 
+              <br><br>
+              - Creación y configuración de reglas para asignar tickets automaticamente a determinados tecnicos o grupos según la categoria
+              del ticket, la importancia del ticket, etc.
+          </p>
+          <h3>Usuarios y grupos</h3>
+          <p>
+            Hemos creado varios tipos de usuarios con distintos perfiles y grupos para separar a los usuarios de la empresa de los técnicos y 
+            poder simular un entorno empresarial real.
+            <br><br>
+            <b>Usuarios:</b>
+            <br><br>
+            4 técnicos diferenciados por la categoria de incidencias que van a tratar, incidencias de software, hardware, ambas y peticiones
+            de mejora.
+            <br><br>
+            Varios usuarios con diferentes perfiles y tipos que según el perfil que tenga el usuario tiene más privilegios sobre GLPI que 
+            otros usuarios.
+
+            <br><br>
+            <b>Grupos: </b>
+            <br><br>
+            Grupos para incidencias de software en el que estaran el técnico de sofware y el que trata ambas categorias de incidencias, grupos
+            para incidencias de hardware en el que estan el técnico de hardware y el de ambas categorias y grupos de usuarios que separan
+            distintos departamentos que tiene toda empresa (calidad, contablidad, gestión de personas, comunicación, atención al cliente, etc).
+            <br><br>
+            Estos usuarios y grupos los hemos creado pensando y adaptando al máximo como podría ser un entorno real la gestión de usuarios y 
+            grupos de una empresa.
+          </p>
+
+          <h3>Configuración de tickets</h3>
+          <p>
+            Hemos creado distintas categorias para los tickets, para diferenciarlos según la incidencia (software , hardware, petición, etc) y 
+            de esta manera poder asignar el ticket de manera automatica a un usuario o grupo determinado definidos en las reglas.   
+          </p>
+
+          <h3>Reglas</h3>
+          <p>
+            Hemos creado reglas para asignar tickets automaticamente a determinados técnicos o grupos, 
+            según la categoria y prioridad de la incidencia, y también hemos crado reglas para validar las peticiones de los usuarios 
+            dependiendo del usuario que hace la petición, el tipo de petición, etc.
+          </p>
+
+          <h3>Configuraciones de correo</h3>
+          <p>Otras de las configuraciones que hemos implementado en GLPI han sido el envío de notificaciones al correo electronico  
+            cuando la prioridad del ticket es primordial, también hemos configurado y activado la creación de tickets por correo y hemos
+            habilitado el acceso a GLPI través de la cuenta de correo del usuario.  
+          </p>
+
+          <h3>Agente GLPI</h3>
+          <p>
+            Hemos usado el agente de GLPI para poder sincronizar las máquinas clientes de la red e inventariarlas con el servidor GLPI,
+            para conseguir esto tan solo teniamos que ejecutar cuatro comandos en los clientes, la descarga del agente, la instalación
+            del agente en la máquina, la configuración del agente para sincronizarse con el servidor y el enlace entre las dos máquinas.
+            <br><br>
+            Y como hemos comentado anteriormente estos comandos los hemos colocado en un script y hemos automatizado la configuración e 
+            instalación del agente GLPI en lás máquinas clientes de la red.
+              
+           </p>
+           <img src="img/configuracion.jpg" alt="" width="40%" style="border-radius: 20px;">
+
+          <h2 id="manuales">Manuales</h2>
+          <p>
+            Una de las cosas en las que hemos puestos mas enfasis a lo largo del proyecto es la creación de manuales de usuario
+            para que los usuarios que entren en la página web puedan entender más facilmente como funciona GLPI, lo que puedes hacer
+            con GLPI y como configurarlo para sacarle el máximo rendimiento a la herramienta.
+         </p>
+         <img src="img/ManualBLOG2.webp" alt="" width="35%">
+         <br>
+         <p>
+          Todas las configuraciones que hemos realizado en el servidor GLPI se explicaran de manera mas clara y detallada durante
+          la exposicón del proyecto ante el jurado, aunque si hay alguna duda con alguna configuración puedes ponerte en contacto
+          con nosotros a través de los correos electronicos proporcionados en la página de contaco.
+         </p>
+
+          <!--------------------------------------------------------------------------------------------------------------------------------->
+
+          <h1 id="defensa">5. Defensa</h1>
+          <h2 id="objetivos" style="margin-top: 3%;">Objetivo</h2>
+          <p style="margin-top: 0.5%;">
+            Nuestro proyecto tenia como objetivo principal la implementación y automatización de la herramienta de gestión de 
+            servicios IT, GLPI , en una máquina Ubuntu que actua como servidor centralizado en la red. 
+            <br><br>
+            Dividimos el proyecto en varias fases que incluyen la instalación manual inicial de GLPI, la automatización del proceso 
+            de instalación, la configuración de una zona DNS para acceder por nombre de dominio a la web y la implementación de un 
+            certificado SSL para mejorar la seguridad del servidor.
+            <br><br> 
+            Y una vez terminado el proceso de instalación y configuración del entorno del servidor ubuntu, configuramos GLPI para 
+            gestionar usuarios y grupos, crear reglas que automatizan la asignación y notificación de tickets.
+          </p>
+
+          <img src="img/objetivos.png" alt="" width="50%">
+          
+          <h2 id="justificacion" style="margin-top: 3%;">Justificación</h2>
+          <p style="margin-top: 0.5%;">
+            El motivo por el cual hemos desarrollado este proyecto es porque queriamos simular la manera en la que una organización
+            prepara todo su entorno empresarial con la herramienta GLPI en una red local a través de una máquina virtual Ubuntu que actua
+            como servidor.
+            <br><br>
+            También queriamos automatizar todo el proceso de instalación de GLPI para que cualquier usuario que acceda a esta
+            página web pueda instalar GLPI sin errores y de manera automatica, para despues poder configurarlo a su gusto o usar 
+            las configuraciones creadas por nosotros mismos. 
+          </p>
+
+          <h2 id="metodologia" style="margin-top: 3%;">Metodología </h2>
+          <p style="align-self: flex-start; margin-left: 10%; margin-top: 0.5%;">El desarollo del proyecto se ha realizado en 4 fases: </p>
+          <h3 style="align-self: flex-start; margin-left: 10%; margin-top: 2%;"><u>Fase 1: Instalación Manual de GLPI</u></h3>
+          <p style="margin-top: 1%;">
+            <b>Preparación del Entorno:</b> Configuración inicial del servidor Ubuntu, instalando los programas necesarios (Apache,
+             MySQL y PHP) para instalar GLPI en ubuntu.
+
+            <br><br>
+
+            <b>Descarga de GLPI:</b> Descarga de la ultima versión estable de GLPI desde la web oficial.
+
+            <br><br>
+
+            <b>Configuración e instalación:</b>  
+            Configuración básica de GLPI, creación de la base de datos y ajuste de parámetros 
+            iniciales para poder instalar GLPI en el servidor.
+          </p>
+
+          <h3 style="align-self: flex-start; margin-left: 10%; margin-top: 3%;"><u>Fase 2: Configuración del DNS y Certificado SSL</u></h3>
+          <p style="margin-top: 1%;">
+            <b>Configuración del DNS:</b> Creación de una zona DNS específica para que se pueda acceder a GLPI mediante un nombre de 
+            dominio (ej. glpi.elpuig.cat).
+
+            <br><br>
+
+            <b>Configuración del site web en Apache2:</b> Configuración y habilitación de los archivos de configuración de apache2 que 
+            definen como se va a llamar la página web (nombre de dominio de la web) para acceder a GLPI. 
+
+            <br><br>
+            
+            <b>Implementación del Certificado SSL:</b> Instalación de un certificado SSL autofirmado para asegurar la conexión HTTPS en nuestro
+            servidor web local.
+          </p>
+
+          <h3 style="align-self: flex-start; margin-left: 10%; margin-top: 3%;"><u>Fase 3: Automatización de la Instalación</u></h3>
+          <p style="margin-top: 1%;">
+            <b>Desarrollo del script de automatización:</b> Creación de un script para automatizar el proceso de instalación y configuración 
+            de GLPI en máquinas ubuntu.
+
+            <br><br>
+            
+            <b>Desarrollo del playbook de ansible:</b> Creación de un playbook de ansible que automatize la instalación y configuración de 
+            la zona DNS en la máquina ubuntu de manera sencilla e intuitiva.
+            
+            <br><br>
+            
+            <b>Integración entre script y playbook:</b> Creación de un condicional en el script para que en caso de querer configurar la zona
+            DNS se ejecute el playbook.
+
+            <br><br>
+            
+            <b>Pruebas de automatización:</b> Verificación de que el script y playbook funcionen correctamente y que GLPI se instale y configure
+            como se espera en diferentes máquinas ubuntu.
+          </p>
+
+
+          <h3 style="align-self: flex-start; margin-left: 10%; margin-top: 3%;"><u>Fase 4: Configuración de GLPI</u></h3>
+          <p style="margin-top: 1%;">
+            <b>Creación de usuarios y grupos:</b> Configuración de diversos usuarios y grupos dentro de GLPI para simular la estructura 
+            organizativa de una empresa.
+            
+            <br><br>
+
+            <b>Configuración de Reglas para Tickets:</b> Implementación de reglas automáticas para la asignación de tickets según criterios 
+            definidos ( categoria, prioridad, etc.).
+
+            <br><br>
+            
+            <b>Enlace de máquinas con el servidor:</b> Uso del agente GLPI para que el servidor GLPI pueda inventariar y guardar los equipos
+            finales de la red local en su sistema. 
+
+            <br><br>
+            
+            <b>Notificaciones por Email:</b> Configuración del sistema de notificaciones para enviar correos electrónicos en casos de tickets 
+            de alta prioridad.
+
+            <br><br>
+            
+            <b>Creación de Tickets por Correo:</b> Habilitación de la funcionalidad que permite la creación de tickets mediante el envío 
+            de correos electrónicos.
+
+            <br><br>
+
+            <b>Habilitar el acceso por cuenta correo:</b> Habilitación de la funcionalidad que permite iniciar sesión en el sistema GLPI 
+            a través de una cuenta de correo electrónico habilitada para el usuario.
+          </p>
+
+          <h2 id="resultados">Resultados Obtenidos</h2>
+          <p style="margin-top: 0.5%;"> 
+            Una vez finalizado el proyecto podemos decir que hemos conseguido la mayoria de objetivos que nos planteamos incialmente:
+            <br><br>
+            Hemos conseguido montar un servidor Ubuntu en el cual hemos instalado Apache2, MySQL, PHP y GLPI, también hemos configurado
+            una zona DNS para que los usuarios puedan acceder a GLPI por nombre de dominio y hemos generado un certificado autofirmado
+            para asegurar el servidor web.
+            <br><br>
+            En resumen hemos conseguido montar un servidor ubuntu en el cual se ha configurado todo lo necesario para que GLPI funcione
+            de manera correcta y se pueda acceder y configurar GLPI correctamente.
+            <br><br>
+            También hemos conseguido automatizar el proceso de instalación de GLPI en máquinas Ubuntu, y crear un playbook que a partir 
+            de los parametros solicitados configure el servidor DNS para el servidor web de Apache. 
+            <br><br>
+            Y respecto a la configuración de GLPI hemos conseguido automatizar la asignación de tickets según la categoria de la incidencia,
+            habilitar el acceso a GLPI por usuario de correo electronico, habilitar la creación de tickets de incidencias por correo 
+            electronico, configurar el envío de notificaciones al correo electronico en función de la importancia del ticket y inventariar
+            y guardar las máquinas presentes en la red en el servidor GLPI.
+
+          </p>
+          <img src="img/resultados.webp" alt="" width="50%">
+
+          <h2 id="mejoras" style="margin-top: 3%;">Mejoras a futuro</h2>
+          <p style="margin-top: 0.5%;">
+            Después de finalizar el proyecto creemos que hay varias cosas que podemos implementar en GLPI que mejorarían el
+            rendimiento, accesibilidad y seguridad del servidor GLPI, aumentando también sus funcionalidades: 
+          </p>
+
+          <p style="margin-top: 2%;">
+            1. La primera mejora en la que hemos pensado es integrar el servidor GLPI con una base de datos de usuarios de LDAP,
+            de esta manera GLPI sería mas accesible en la red, aparte de que nos ahorrariamos crear los usuarios en el propio servidor
+            GLPI.
+          </p>
+
+          <p style="margin-top: 1%;">
+            2. Otra mejora a futuro en la que hemos pensando seria implementar nuestro propio servidor de correo para que las 
+            notificaciones sobre los tickets importantes lleguen a nuestro propio servidor de correo y se puedan crear tickets 
+            por correo desde nuestro propio servidor de correo.
+          </p>
+
+          <p style="margin-top: 1%;">
+            3. La ultima mejora en la que hemos pensado esque una vez registrados todas las máquinas de la red en el servidor GLPI, 
+            limitar el acceso a GLPI tan solo a las direcciónes IP o MAC registradas en GLPI, es decir limitar el acceso
+            al servidor web tan solo a las máquinas registradas en el GLPI.
+          </p>
+          <p style="margin-bottom: 2%;"></p>
+
+          <img style="margin-bottom: 3%;" src="img/mejoras.png" alt="" width="50%">
+          
+         </div>
+        </div>
+        
+        
+
+        <footer class="footer" style="margin-top: 3%;">
+          <div class="contacto">
+            <h1 style="margin-bottom: 2%; margin: 0%; font-style: oblique;">GLPI PUIG TICKET</h1>
+          </div>
+          <br><br>
+          <div class="container">
+           <div class="row">
+             <div class="footer-col">
+               <h4>Nosotros</h4>
+               <ul>
+                 <li><a href="inicio.html">Inicio</a></li>
+                 <li><a href="info.html">¿Quienes somos?</a></li>
+                 <li><a href="blog.html">Nuestro proyecto</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Ayuda</h4>
+               <ul>
+                <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+                 <li><a href="contacto.html">Contacto</a></li>
+                 <li><a href="politicas.html">Politicas de privacidad</a></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>Sede</h4>
+               <ul>
+                 <li><p style="font-size: 1.2rem; color: white; margin: 0%;"><b>Barcelona</b></p></li>
+                 <li><p style="color: white; margin: 0%;"><small>Av de l'Anselm de Riu, 10, 08924 <br> Santa Coloma de Gramenet, Barcelona </small></p></li>
+                 <li><p style="color: white; margin: 0%;"><small>TLF. +34 933 91 61 11 </small></p></li>
+                 <li><p style="color: white; margin: 0%;"><small>Correo: glpi@elpuig.xeill.net </small></p></li>
+               </ul>
+             </div>
+             <div class="footer-col">
+               <h4>follow us</h4>
+               <div class="social-links">
+                 <a href="https://www.facebook.com/p/Institut-Puig-Castellar-100064042952921/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                 <a href="https://twitter.com/elpuigcastellar?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+                 <a href="https://www.instagram.com/elpuigcastellar?igsh=aW0ycDM1cnNndDFq" target="_blank"><i class="fab fa-instagram"></i></a>
+                 <a href="https://es.linkedin.com/company/elpuig" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                 <a href="https://elpuig.xeill.net/" target="_blank"><i class="fab fa-google"></i></a>
+               </div>
+             </div>
+           </div>
+          </div>
+          <br><br>
+          <div style="width: 90%; border: 0.5px solid white; border-radius: 10px; display: flex; justify-content: center; margin-left: 5%;"></div>
+          <br><br>
+          <p style="display: flex; justify-content: center; text-align: center; color: white;"> Copyright @ 2024 GLPI PUIG TICKET <br> Todos los derechos reservados </p>
+    
+       </footer>
+
+         
+
+</body>
+</html>

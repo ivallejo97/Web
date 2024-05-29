@@ -1,0 +1,991 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin');
+/*------------------------------------------------------------------------------------------------------ */
+/*------------------------------------------------------------------------------------------------------ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS HEADER */
+/*------------------------------------------------------------------------------------------------------------*/
+.barraSuperior{
+    min-height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#006bfa; /* color de fuente */
+    color: white;
+}
+.foto{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#nombre{
+    align-self: center;
+    font-style: oblique;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    align-self: center;
+}
+#puig{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS PRESENTE EN TODAS LAS PAGINAS */
+/*------------------------------------------------------------------------------------------------------------padding: 2%;*/
+.contenido-pagina {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenido-pagina h2{
+    margin-top: 1%;
+}
+.contenido-pagina h3{
+    margin-top: 1%;
+}
+.info{
+    width: 80%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.contenido-info {
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-radius: 2rem;
+    align-self: center;
+    background-color: #f4f4f4;
+}
+.contenido-info .info p{
+  text-align: left;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/*CSS Pagina de INICIO*/
+/*------------------------------------------------------------------------------------------------------------*/
+.container-GLPI{
+    width: 100%;
+    height: auto;
+    background-color: #f8fbfe;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #33373d;
+}
+.container-GLPI img{
+    width: 45%;
+    height: auto;
+    margin-left: 2.5%;
+    border-radius: 10px;
+}
+.glpi{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-self: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2%;
+    box-shadow: 10px 5px 5px #ccc;
+    color: black;
+    background-color: white;
+}
+.glpi h3{
+    font-weight: normal;
+}
+.general{
+    width: 85%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center ;
+    flex-direction: column;
+}
+.caracteristicas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: 1px solid transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.funcionalidades{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 1.5%;
+    padding: 1.5%;
+}
+/* color: #795548; */
+.caracteristicas .funcionalidades .icon {
+    display: flex;
+    justify-content: center ;
+    color: #006bfa;
+}
+.caracteristicas .funcionalidades p {
+    display: flex;
+    justify-content: center ;
+    color: black;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.caracteristicas .funcionalidades h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    color: black;
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    border: 1px solid tr;
+}
+.imgActivos{
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    animation: ampliacion-ext 2s forwards;
+}
+.nube{
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+.local{
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+.backAzul{
+    width: 100%; 
+    padding: 2%;
+    background-color: #f8fbfe; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-top: 1px solid black;
+}
+.backBlanco{
+    width: 100%; 
+    padding: 2%;
+    background-color: white; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    border-top: 1px solid black;
+}
+.modos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: white; 
+    padding-bottom: 5%;
+}
+.modos .modo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.modos .modo p{
+    width: 80%;
+    text-align: left;
+    margin-right: 10%;
+}
+.organizaciones{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2.5%;
+    align-items: center;
+}
+.separar{
+    width: auto;
+    height: auto; 
+    border: 0.5px 
+    solid #33373d;
+}
+.container-caracteristicas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8fbfe;
+}
+
+.definicion-caracteristicas{
+    width: 50%;
+    padding-top: 3%;
+    padding-left: 2.5%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+.container-caracteristicas .definicion-caracteristicas a{
+    text-decoration: none; 
+    color: #006bfa;
+}
+.container-caracteristicas .definicion-caracteristicas a:hover{
+    text-decoration: none; 
+    color: #133e73;
+}
+.imagenCaracteristicas{
+    width: 40%;
+    height: auto;
+}
+.imagenCaracteristicas img{
+    width: 90%;
+    height: 95%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.imagenCaracteristicas img:hover{
+    width: 90%;
+    height: 95%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 10px;
+    transform: scale(1.02); /* Aumenta el tamaño de la imagen al hacer hover */
+}
+.linkManualesInicio{
+    text-decoration: none;
+    color: #006bfa;
+}
+.linkManualesInicio:hover{
+    text-decoration: none;
+    color: #133e73;
+}
+.organizaciones img{
+    margin: 2.5%;
+    max-width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS modificado librerias */
+/*------------------------------------------------------------------------------------------------------------*/
+
+.ui.placeholder.segment{
+    border: 1px solid black;
+}
+
+.ui.fixed.single.line.celled.table {
+    width: 80%;
+    margin-bottom: 2%;
+}
+.ui.stackable.menu{
+    margin: 0%;
+    width: auto;
+    height: auto;
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    background-color: #006bfa;
+    border-radius: 0px;
+}
+.ui.stackable.menu .item{
+    padding: 1.5rem;
+}
+.ui.stackable.menu a {
+    color: white;
+}
+.ui.stackable.menu:hover a:hover {
+    background-color: white;
+    color: black;
+}
+
+.ui.raised.segments {
+    margin: 0.5%;
+    width: 70%;
+    display: inline-block;
+    justify-content: center;
+}
+
+.ui.segment{
+    width: 80%;
+    display: flex;
+    align-self: center;
+}
+
+.ui.segment p {
+    margin-top: 1px;
+    margin: 5px;
+    width: 80%;
+    min-height: 100%;
+    display: inline-block;  
+}
+
+
+.ui.segment .descarga,
+.ui.segment .manual{
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.ui.small.steps{
+    width: 70%;
+    display: flex;
+    align-self: center;
+}
+
+.ui.steps .step:hover {
+    background-color: #f4f4f4; /* Cambio de color de fondo al pasar el cursor */
+    cursor: pointer; /* Cambio de cursor al pasar el cursor */
+}
+
+.ui.icon.button {
+    border: 1.5px solid #006bfa;
+    background-color: white;
+}
+
+.ui.icon.button a{
+    text-decoration: none;
+}
+
+.download.icon { 
+    color: black;
+}
+
+.file.alternate.icon {
+    color: black;
+}
+
+.ui.divided.items {
+    width: 80%;
+    border: 1px solid #006bfa;
+}
+.ui.divided.items .item {
+    background-color: transparent;
+}
+.ui.divided.items .image {
+    background-color: transparent;
+}
+.ui.right.floated.primary.button a{
+    color: white;
+    text-decoration: none;
+}
+
+.ui.divided.items{
+    background-color: transparent;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.ui.cards .card .extra.content {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+.ui.cards .card .meta .basico{
+    width: 30%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+    
+}
+.ui.cards .card .meta .medio{
+    width: 30%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    border-radius: 5px;
+    color: black;
+    
+}
+.ui.cards .card .meta .avanzado{
+    width: 30%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    border-radius: 5px;
+    color: white;  
+}
+.ui.link.cards{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+   border: 1px solid transparent;
+}
+.ui.link.cards .card{
+    margin: 1.5%;
+}
+.ui.animated.button{
+    margin-left: 1rem;
+}
+.ui.stackable.menu{
+    width: 100%;
+    min-height: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: #006bfa;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.ui.styled.fluid.accordion{
+    width: 60%;
+    margin-top: 1%;
+}
+.ui.styled.fluid.accordion .title{
+    padding: 20px;
+}
+.ui.styled.fluid.accordion .content{
+    padding: 20px;
+    color: black;
+}
+.ui.styled.fluid.accordion .content p{
+    font-size: 0.9em;
+    color: black;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS PAGINA DESCARGA */
+/*------------------------------------------------------------------------------------------------------------*/
+.instalacion {
+    width: 50%;
+    height: 10%;
+    margin: 0.5%;
+    padding: 0.4%;
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+.instalacion p {
+    width: 83%;
+    margin-left: 2%;
+}
+.descarga, .manual {
+    width: 6%;
+    padding-top: 0.6%;
+    padding-left: 0.3%;
+    padding-right: 0.3%;
+    padding-bottom: 0.6%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+}
+.descarga:hover, .manual:hover {
+    background-color: #ece1e1;
+}
+.descarga img,
+.manual img {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.doc_install , .doc_install2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+.doc , .doc2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 9999;
+    width: 50%;
+    height: auto;
+}
+
+.doc_install .doc .ui.icon.button{
+    float: right;
+    border-color: #33373d;
+    border-radius: 5rem;
+    color: black;
+}
+.doc_install2 .doc2 .ui.icon.button{
+    float: right;
+    border-color: #33373d;
+    border-radius: 5rem;
+}
+.recomendados{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+.SO{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 2.5%;
+}
+.ubuntu22{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+.windows10{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS DMCA */
+/*------------------------------------------------------------------------------------------------------------*/
+.contenido-dmca{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS POLITICAS */
+/*------------------------------------------------------------------------------------------------------------*/
+.contenido-politicas{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    margin: 5%;
+    margin-top: 2%;
+}
+
+.contenido-politicas .ui.raised.segments{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    
+}
+.contenido-politicas .ui.raised.segments .ui.segment{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    margin: 0%;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+.apartados{
+    margin-bottom: 1%;
+}
+.contenido-politicas .ui.raised.segments .ui.segment p{
+    width: 95%;
+    height: auto;
+    text-align: left;
+    margin: 0%;
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
+    border: 1px solid transparent;
+} 
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS PREGUNTAS FRECUENTES */
+/*------------------------------------------------------------------------------------------------------------*/
+.imagen-fondo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fondo{
+    width: 100%;
+    height: 470px;
+    background-color: #33373d;
+    animation: ampliacion 2s forwards; 
+}
+.text {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    color: white; 
+    font-size: 5rem; 
+    text-align: center;
+    margin-top: 10%;
+    animation: ampliacion 2s forwards;
+  }
+  .textP {
+    width: 100%;
+    position: absolute;
+    color: white; 
+    text-align: center;
+    padding: 10px 20px; 
+    border-radius: 0px; 
+    animation: ampliacion 2s forwards;
+  }
+.logoProyecto{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    animation: ampliacion 2s forwards;
+} 
+/*
+opacity: 0;  Inicialmente oculta la imagen 
+transition: opacity 4s ease;  Transición suave para la opacidad 
+animation: ampliacion 4s forwards;  Nombre de la animación y duración 
+*/
+.pregunta{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 5%;
+    left: 85%;
+    animation: ampliacion 2s forwards;
+}  
+.preguntas-secciones{
+    display: flex;
+    align-items: start;
+    align-self: start;
+    margin-left: 20%;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS ANIMACIONES */
+/*------------------------------------------------------------------------------------------------------------*/
+  @keyframes ampliacion {
+    from {
+        transform: scale(0.95); /* Escala inicial de 0 */
+    }
+    to {
+        transform: scale(1); /* Escala final de 1 (tamaño original) */
+    }
+} 
+@keyframes ampliacion-ext {
+    from {
+        transform: scale(0.1); /* Escala inicial de 0 */
+    }
+    to {
+        transform: scale(1); /* Escala final de 1 (tamaño original) */
+    }
+} 
+@keyframes animacion {
+    0% {
+      top: 100%;
+      width: 0;
+    }
+    100% {
+      top: 0;
+      width: 100%;
+    }
+  }
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS CONTACTO */
+/*------------------------------------------------------------------------------------------------------------*/
+.container-contacto {
+    width: 90%;
+    margin: 5%;
+    display: flex;
+    border: 1px solid transparent;
+}
+.imagenContacto {
+    width: 50%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.imagenContacto img {
+    width: 95%;
+    float: right;
+    align-items: end;
+    align-self: flex-end;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.imagenContacto h1 {
+    width: 95%;
+    margin-left: 5%;
+}
+.contactos{
+    width: 50%;
+    background-color: #33373d;
+    color: white;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.email {
+    width: 50%;
+    padding: 2%;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #f4f4f4;
+}
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS PÁGINA REGLAS */
+/*------------------------------------------------------------------------------------------------------------*/
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #f8fbfe;
+}
+.definicion{
+    width: 50%;
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+.container1 .definicion a{
+    text-decoration: none; 
+    color: #006bfa;
+}
+.container1 .definicion a:hover{
+    text-decoration: none; 
+    color: #133e73;
+}
+.imagenReglas{
+    width: 50%;
+    height: auto;
+}
+.imagenReglas img{
+    width: 95%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.imagenReglas img:hover{
+    width: 95%;
+    height: 90%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    transform: scale(1.02); /* Aumenta el tamaño de la imagen al hacer hover */
+}
+.imagenReglas2{
+    width: 50%;
+    height: auto;
+}
+.imagenReglas2 img{
+    width: 95%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+.imagenReglas2 img:hover{
+    width: 95%;
+    height: 80%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    border-radius: 10px;
+    transform: scale(1.02); /* Aumenta el tamaño de la imagen al hacer hover */
+}
+.tipo-reglas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tipo-reglas .container-reglas{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tipo-reglas .container-reglas .tipo{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: start;
+    flex-direction: column;
+    
+}
+.tipo-reglas .container-reglas .tipo .ui.raised.segments{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    text-align: center;
+}
+.tipo-reglas .container-reglas .tipo .ui.raised.segments .ui.segment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tipo-reglas .container-reglas .tipo .ui.raised.segments .ui.segment p{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.container-mas-informacion{
+    width: 70%;
+    height: auto;
+    background-color:  #777;
+    border: 1px solid transparent;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    text-decoration: none;
+}   
+.mas-informacion{
+    width: 99%;
+    height: 100%;
+    background-color:  #133e73;
+    color: white;
+    border: 1px solid transparent;
+    padding: 2.5%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.mas-informacion button{
+    text-decoration: none;
+}
+#botonMASinfoManuales{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+#botonMASinfoManuales:hover{
+    background-color: white;
+    color: #006bfa;
+    border-radius: 30px;
+}
+
+/*------------------------------------------------------------------------------------------------------------*/
+/* CSS PÁGINA DESCARGAR REGLAS */
+/*------------------------------------------------------------------------------------------------------------*/
+#dwn-reglas{
+    margin: 0.5%;
+    border-radius: 0%;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 0px solid white;
+    border-radius: 0px;
+}
+.ui.segment #boton-descargar-regla{
+    width: 15%;
+    height: 30%;
+    margin-left: 5%;
+    padding: 1%;
+    background-color: #006bfa;
+    color: white;
+    display: inline-block;
+    align-self: self-end;
+}
+.ui.segment #boton-descargar-regla:hover{
+    width: 15%;
+    height: 30%;
+    margin-left: 5%;
+    padding: 1%;
+    background-color: #133e73;
+    color: white;
+    display: inline-block;
+    align-self: self-end;
+}
+.div-indice{
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%; 
+    border-radius: 20px; 
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px #33373d; /* Sombra en los cuatro lados */
+}

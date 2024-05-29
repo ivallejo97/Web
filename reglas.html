@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas</title>
+    <link rel="shortcut icon" href="img/logo_proyecto.png"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- LIBRERIAS SEMANTIC UI -->
+    <link rel="stylesheet" href="UI-Menu-master/menu.css">
+    <link rel="stylesheet" href="UI-Input-master/input.css">
+    <link rel="stylesheet" href="UI-Segment-master/segment.css">
+    <link rel="stylesheet" href="UI-Button-master/button.css">
+    <link rel="stylesheet" href="UI-Icon-master/icon.css">
+    <!-- LIBRERIAS Iconos Redes -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+<body>
+    <header class="barraSuperior"> 
+        <div class="foto">
+            <img id="logo" src="img/logo_proyecto.png" alt="Logo proyecto">
+        </div>
+        
+        <h1 id="nombre">Puig Ticket</h1>
+
+        <div class="foto">
+            <img id="puig" src="img/logopuig.png" alt="Logo Puig Castellar">
+        </div>
+    </header>
+
+    <div class="ui stackable menu" static>
+      <a href="inicio.html" class="item">Inicio</a>
+      <a href="versiones.html" class="item">Aplicaciones</a>
+      <a href="reglas.html" class="item">Reglas GLPI</a>
+      <a href="manuales.html" class="item">Manuales de uso</a>
+      <a href="descarga.html" class="item">Descargar</a>
+      <a href="blog.html" class="item">Nuestro proyecto</a>
+    </div>
+    
+
+    <div class="contenido-pagina">
+
+        <div class="container1" style="padding-bottom: 5%; background-color: white;">
+            <div class="definicion">
+                <h1>Reglas en GLPI</h1>
+                <br>
+                <p style="font-size: 1.2em;">Las reglas en GLPI son un conjunto de instrucciones o condiciones definidas en el apartado de administración  que se aplican automáticamente a 
+                ciertos eventos dentro del sistema y se usan habitualmente para automatizar procesos, definir roles de usuarios y grupos, 
+                controlar el acceso al sistema y optimizar el flujo de trabajo para el servicio de asistencia y el inventario.
+                <br> <br>
+                Su uso mas habitual es para automatizar procesos de GLPI como pueden ser la asignación automatica de tickets de incidencias
+                a determinados tecnicos, programar el envio de correos electronicos o notificaciones, generar informes a partir de 
+                determinados datos obtenidos... 
+                <br><br>
+                Hemos creado reglas personalizadas, para descargarlas puedes consultar la siguiente página: 
+                <a href="descargar-reglas.html">Nuestras Reglas</a>
+                </p>
+            </div>
+            <div class="imagenReglas">
+                <img src="img/reglas.png" alt="">
+            </div>
+        </div>
+
+        
+        <div class="container1" style="padding-top: 5%; padding-bottom: 5%; border-top: 1px solid black; border-bottom: 1px solid black;">
+          <div class="imagenReglas2">
+            <img src="img/reglas2.png" alt="">
+          </div>
+          <div class="definicion">
+              <h1>Intercambio de Datos: Importación y Exportación en GLPI</h1>
+              <br>
+              <p>
+              Una gran característica que GLPI ofrece a sus usuarios es la importación y exportación de reglas, una vez creadas las reglas
+              se pueden exportar a una máquina y tenerlas a modo de copia de seguridad, o también se pueden importar en el sistema reglas 
+              ya creadas por otros usuarios que contengan funcionalidades necesarias para el sistema GLPI actual.
+              </p>
+              <br>
+              <h3>Exportar</h3>
+              <p>Permite guardar reglas existentes en un archivo para poder usarlas en un futuro. 
+                <br>
+                Es útil si queremos realizar una copia de seguridad de las reglas, compartirlas con otros usuarios o migrarlas a otra instancia 
+                de GLPI, cuando exportamos una regla el archivo exportado contiene toda la información necesaria para restaurar las reglas</p>
+              <br>
+              <h3>Importar</h3>
+              <p>Permite cargar un archivo de reglas que previamente se haya exportado. 
+                <br>
+                Se puede utilizar para migrar reglas entre diferentes instancias de GLPI o para restaurar reglas después de una actualización o restauración del sistema,
+                cuando queremos importar, GLPI reconocerá el archivo exportado y restaurará las reglas que ya habíamos guardado previamente.</p>
+          </div>
+      </div>
+
+        <br><br>
+        <div class="tipo-reglas">
+          <h1>Tipos de reglas en GLPI</h1>
+          <br><br>
+          <div class="container-reglas">
+
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Regla para equipos de importación y enlace</h3>
+                  <br>
+                  <p>
+                    Se utilizan para definir la manera en la que se importan y se enlazan los equipos (ordenadores, equipos de red, impresoras, etc) 
+                    en el servidor GLPI, además de eso agilizan el proceso de integración de los nuevos equipos y aseguran que estos equipos se 
+                    enlazan correctamnete con la infraestructura ya existente.
+                </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Reglas para asignar un elemento a una entidad</h3>
+                  <br>
+                  <p> 
+                      Se utilizan para asignar automáticamente un elemento, como puede llegar a ser un ticket o un usuario 
+                      a una entidad de GLPI existente, por lo general estas reglas se usan para automatizar la distribución 
+                      de tareas, y a su misma vez mejoran la eficiencia del equipo de soporte.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Reglas de ubicación</h3>
+                  <br><br>
+                  <p>
+                    Se utilizan para gestionar la ubicación de los elementos en GLPI, facilitando el seguimiento de 
+                    los activos TI (ordenadores, equipos de red, impresoras, etc) de una organización y ayudando a mantener 
+                    actualizada toda la información relacionada con la ubicación física de estos.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Reglas de asignación de autorizaciones</h3>
+                  <br>
+                  <p>
+                    Se utilizan para asignar automáticamente permisos y roles a los usuarios en GLPI, simplifican la
+                    gestión de accesos y aseguran que los usuarios tengan los permisos adecuados para realizar sus tareas 
+                    (crear tickets, enviar notificaciones, generar informes, etc).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          
+          <br><br>
+
+          <div class="container-reglas">
+
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Reglas para asignar una categoría a un software</h3>
+                  <br>
+                  <p>
+                    Se utilizan para asignar automáticamente categorías a los programas de software en GLPI, ayudando 
+                    a organizar y clasificar la información sobre los activos de software de manera que tengan coherencia.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Reglas de negocio para las peticiones</h3>
+                  <br>
+                  <p>
+                    Se utilizan para definir acciones automáticas basadas en criterios de negocio relacionados con los tickets 
+                    (asignarlos automaticamente según la carga de trabajo), permitendo personalizar el tráfico de trabajo y adaptarlo 
+                    a las necesidades actuales de la empresa.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Reglas de negocio para activos</h3>
+                  <br>
+                  <p>
+                    Se utilizan para definir acciones automáticas según ciertos criterios de negocios, ayudan a mantener actualizada 
+                    la información sobre los activos y facilitan la toma de decisiones relacionadas con su gestión
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="tipo">
+              <div style="width: 90%; height: 20px; background-color: #133e73; border-top-left-radius: 10px; border-top-right-radius: 10px;"></div>
+              <div class="ui raised segments">
+                <div class="ui segment">
+                  <h3>Blacklists</h3>
+                  <br>
+                  <p>
+                    Se utilizan para configurar listas negras que bloquean elementos o acciones (Direcciones IP, MAC, envio de cierto tipos de paquetes, etc)
+                    en GLPI, en general ayudan a proteger la integridad y seguridad del sistema, previniendo el acceso no autorizado o contenido que no deseemos.
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+      </div>
+
+      <div class="container-mas-informacion">
+        <div class="mas-informacion">
+          <p>Para obtener más información sobre que son y como funcionan las reglas en GLPI, que tipos de reglas existen, sus 
+            funcionalidades, que reglas son las mas útiles y demás, puede consultar nuestros manuales sobre Reglas GLPI disponibles 
+            en el apartado de manuales en la página web.
+            <br><br>
+
+            <a href="manuales.html">
+              <button class="ui button" id="botonMASinfoManuales">
+                Manuales <i class="right chevron icon"></i>
+              </button>
+            </a>
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <p>También puedes descargar e importar en tu sistema GLPI algunas reglas creadas por 
+            nosotros, para ello consulta el apartado Descargar nuestras reglas, y comprueba si hay 
+            alguna regla necesaria para tu sistema GLPI.
+            <br><br>
+
+            <a href="descargar-reglas.html">
+              <button class="ui button" style="background-color: white;">
+                Nuestras reglas <i class="right arrow icon"></i>
+              </button>
+            </a>
+
+          </p>
+ -->
+
+    <footer class="footer">
+      <div class="contacto">
+        <h1 style="margin-bottom: 2%; font-style: oblique;">GLPI PUIG TICKET</h1>
+      </div>
+      <br><br>
+      <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Nosotros</h4>
+          <ul>
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="info.html">¿Quienes somos?</a></li>
+            <li><a href="blog.html">Nuestro proyecto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="politicas.html">Politicas de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Sede</h4>
+          <ul>
+            <li><p style="font-size: 1.2rem; color: white;"><b>Barcelona</b></p></li>
+            <li><p style="color: white;"><small>Av de l'Anselm de Riu, 10, 08924 <br> Santa Coloma de Gramenet, Barcelona </small></p></li>
+            <li><p style="color: white;"><small>TLF. +34 933 91 61 11 </small></p></li>
+            <li><p style="color: white;"><small>Correo: glpi@elpuig.xeill.net </small></p></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/p/Institut-Puig-Castellar-100064042952921/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/elpuigcastellar?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/elpuigcastellar?igsh=aW0ycDM1cnNndDFq" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://es.linkedin.com/company/elpuig" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://elpuig.xeill.net/" target="_blank"><i class="fab fa-google"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <br><br>
+      <div style="width: 90%; border: 0.5px solid white; border-radius: 10px; display: flex; justify-content: center; margin-left: 5%;"></div>
+      <br><br>
+      <p style="display: flex; justify-content: center; text-align: center; color: white;"> Copyright @ 2024 GLPI PUIG TICKET <br> Todos los derechos reservados </p>
+
+    </footer>
+   
+   
+
+ 
+</body>
+</html>

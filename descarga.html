@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar</title>
+    <link rel="shortcut icon" href="img/logo_proyecto.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- LIBRERIAS SEMANTIC UI -->
+    <link rel="stylesheet" href="UI-Menu-master/menu.css">
+    <link rel="stylesheet" href="UI-Input-master/input.css">
+    <link rel="stylesheet" href="UI-Segment-master/segment.css">
+    <link rel="stylesheet" href="UI-Button-master/button.css">
+    <link rel="stylesheet" href="UI-Icon-master/icon.css">
+    <!-- LIBRERIAS Iconos Redes -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+<body>
+    <header class="barraSuperior"> 
+        <div class="foto">
+            <img id="logo" src="img/logo_proyecto.png" alt="Logo proyecto">
+        </div>
+        
+        <h1 id="nombre">Puig Ticket</h1>
+
+        <div class="foto">
+            <img id="puig" src="img/logopuig.png" alt="Logo Puig Castellar">
+        </div>
+    </header>
+
+    <!-- <div class="item"> 
+      <img src="img/logo_proyecto.png">
+    </div> -->
+
+    <div class="ui stackable menu" static>
+      <a href="inicio.html" class="item">Inicio</a>
+      <a href="versiones.html" class="item">Aplicaciones</a>
+      <a href="reglas.html" class="item">Reglas GLPI</a>
+      <a href="manuales.html" class="item">Manuales de uso</a>
+      <a href="descarga.html" class="item">Descargar</a>
+      <a href="blog.html" class="item">Nuestro proyecto</a>
+    </div>
+    
+
+
+    <div class="contenido-pagina">
+        <br>
+        <h1>Descarga e instalación de GLPI</h1>
+        <br><br><br>
+        <img src="img/ubuntu.png" alt="" style="width: 450px; height: 120px;">
+        <br>
+        <div class="ui raised segments">
+            <div class="ui segment">
+              <p><b>Descarga completa automatica </b> <br> <small>Descarga e instala automaticamente GLPI en tu servidor ubuntu, con esta 
+              descarga podras instalar GLPI con tan solo unos comandos. </small></p>
+
+              <a href="https://drive.google.com/uc?export=download&id=11QH8V4AstJQhzCBcryVWJghECpZLNc24" style="margin-left: 10%;" download>   
+                <button class="ui icon button">
+                  <i class="download icon" style="font-size: 1.5rem; display: flex; justify-content: center; align-items: center;"></i>
+              </button>
+              </a>
+
+              <button class="ui icon button" id="abrir">
+                <i class="file alternate icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+              </button>
+
+            </div>
+          </div>
+
+          <div class="ui raised segments">
+            <div class="ui segment">
+                <p><b>Descarga con instalación por web </b> <br> <small>Descarga e instala GLPI en tu servidor ubuntu, con 
+                  esta descarga podras instalar GLPI realizando el proceso de instalación vía web.</small></p>
+                <button class="ui icon button" style="margin-left: 10%;">
+                  <i class="download icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+                </button>
+                <button class="ui icon button" id="abrir2">
+                  <i class="file alternate icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+                </button>
+              </div>
+          </div>
+
+            <div class="doc_install" id="doc_install">
+                <div class="doc" id="doc">
+                    <button class="ui icon button" id="cerrar">
+                        <i class="close icon"></i>
+                    </button>
+                    <h2>Pasos para la instalación</h2>
+                    <br>
+                    <p>1. Descarga los ficheros de la página web</p>
+                    <img src="img/guia1.png" alt="">
+                    <br>
+                    <p>2. Abre un terminal de ubuntu para seguir la instalación</p>
+                    <img src="img/guia3.png" alt="">
+                    <br>
+                    <p>3. Mueve los archivos de la carpeta Descargas a tu carpeta personal, lo puedes hacer con el siguiente comando: <br> <b>sudo mv glpi.zip /home/{nombre de usuario}/</b></p>
+                    <br>
+                    <p>3. Descomprime los archivos, para hacerlo puedes usar el comando: <br> <b>tar -xzf {nombre fichero zip} </b> </p>
+                    <br>
+                    <img src="img/guia2.png" alt="">
+                    <p>4. Asignale permisos de ejecución al script de instalación, para ello usa el siguiente comando: <br> <b> sudo chmod +x glpi.sh </b> </p>
+                    <br>
+                    <p>5. Ejecuta el script de instalación con el siguiente comando: <br> <b>./glpi.sh</b> </p>
+                    <br>
+                    <p>6. Espera a que se instale GLPI para poder usarlo, durante la instalación habra partes en las que deberas responder alguna 
+                      pregunta, por ejemplo si quieres configurar el DNS , mantente atento durante la instalación</p>
+                    
+                </div>
+            </div>
+        
+            <div class="doc_install2" id="doc_install2">
+                <div class="doc2" id="doc2">
+                    <button class="ui icon button" id="cerrar2">
+                        <i class="close icon"></i>
+                    </button>
+                    <h2>Pasos para la instalación</h2>
+                    <br>
+                    <p>1. Descarga los ficheros de la página web</p>
+                    <img src="img/guia1.png" alt="">
+                    <br>
+                    <p>2. Abre un terminal de ubuntu para seguir la instalación</p>
+                    <img src="img/guia3.png" alt="">
+                    <br>
+                    <p>3. Mueve los archivos de la carpeta Descargas a tu carpeta personal, lo puedes hacer con el siguiente comando: <br> <b>sudo mv glpi.zip /home/{nombre de usuario}/</b></p>
+                    <br>
+                    <p>3. Descomprime los archivos, para hacerlo puedes usar el comando: <br> <b>tar -xzf {nombre fichero zip} </b> </p>
+                    <br>
+                    <img src="img/guia2.png" alt="">
+                    <p>4. Asignale permisos de ejecución al script de instalación, para ello usa el siguiente comando: <br> <b> sudo chmod +x glpi.sh </b> </p>
+                    <br>
+                    <p>5. Ejecuta el script de instalación con el siguiente comando: <br> <b>./glpi.sh</b> </p>
+                    <br>
+                </div>
+            </div>
+            <script src="js/manual.js"></script> <!-- -->
+
+
+        <br><br>
+        
+
+        <img src="img/windows.png" alt="" style="width: 450px; height: 150px;">
+        <br>
+        <div class="ui raised segments">
+            <div class="ui segment">
+              <p><b>Descarga completa automatica </b> <br> <small>Descarga e instala automaticamente GLPI en tu servidor windows, con esta descarga podras instalar GLPI con tan solo unos comandos.</small></p>
+              <button class="ui icon button" style="margin-left: 10%;">
+                <i class="download icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+              </button>
+              <button class="ui icon button ">
+                <i class="file alternate icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="ui raised segments">
+            <div class="ui segment">
+                <p><b>Descarga con instalación por web </b> <br> <small>Descarga e instala GLPI en tu servidor windows, con 
+                  esta descarga podras instalar GLPI realizando el proceso de instalación vía web.</small></p>
+                <button class="ui icon button" style="margin-left: 10%;">
+                    <i class="download icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+                </button>
+                <button class="ui icon button">
+                   <i class="file alternate icon" style="font-size: 1.4rem; display: flex; justify-content: center; align-items: center;"></i>
+                </button>
+            </div>
+          </div>
+
+
+        <br><br>
+        <h2 class="SO">Sistemas operativos recomendados para la intalación</h2>
+        <div class="recomendados">
+          <div class="ubuntu22">
+            <h2>Ubuntu 22.04</h2>
+            <br>
+            <img src="img/ubuntu22.png" alt="" width="150px" height="150px" style="border-radius: 10px;">
+            <br>
+            <p> <small> Conocido como un sistema estable, seguro y compatible con otros softwares, ubuntu 22.04 se convierte en una <br>
+              elección sólida para instalar GLPI.
+              <br><br>
+              Su facilidad de instalación y uso, junto con actualizaciones regulares y una comunidad activa de usuarios y <br>
+              desarrolladores, proporcionan un entorno propicio para implementar eficientemente GLPI.
+            </small> </p>
+            <br>
+          </div>
+          <div style="width: 1px; height: auto; background-color: black;"></div>
+          <div class="windows10">
+            <h2>Windows 10</h2>
+            <br>
+            <img src="img/windows10.png" alt="" width="150px" height="150px">
+            <br>
+            <p> <small>
+              Conocido por su amplia base de usuarios y su integración con una variedad de aplicaciones empresariales,<br>
+              ofrece un entorno estable y seguro para instalar GLPI. 
+              <br><br>
+              Con características como la compatibilidad de software, la interfaz intuitiva y el soporte continuo, <br>
+              Windows 10 proporciona una plataforma confiable para implementar GLPI.  
+            </small> </p>
+            <br><br>
+          </div>
+        </div>
+        <br><br>
+        <div class="ui raised segments">
+          <div class="ui segment">
+            <p style="width: 100%;"><b><small>NOTA*</small></b> <br> <small>Las instalaciones de GLPI que puedes encontrar en esta página han sido probadas
+              en los sistemas operativos Ubuntu 22.04 y Windows 10, es por eso que recomendados esos sistemas si quieres que la 
+              instalación funcione de manera segura, en otros versiones como Ubuntu 20.04 o windows 11 también podrían funcionar
+              pero no esta comprobado su correcto funcionamiento.
+            </small></p>
+            
+          </div>
+        </div>
+        
+        <br><br>
+    </div>
+
+    <footer class="footer">
+      <div class="contacto">
+        <h1 style="margin-bottom: 2%; font-style: oblique;">GLPI PUIG TICKET</h1>
+      </div>
+      <br><br>
+      <div class="container">
+       <div class="row">
+         <div class="footer-col">
+           <h4>Nosotros</h4>
+           <ul>
+             <li><a href="inicio.html">Inicio</a></li>
+             <li><a href="info.html">¿Quienes somos?</a></li>
+             <li><a href="blog.html">Nuestro proyecto</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Ayuda</h4>
+           <ul>
+            <li><a href="preguntas.html">Preguntas frecuentes</a></li>
+             <li><a href="contacto.html">Contacto</a></li>
+             <li><a href="politicas.html">Politicas de privacidad</a></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>Sede</h4>
+           <ul>
+             <li><p style="font-size: 1.2rem; color: white;"><b>Barcelona</b></p></li>
+             <li><p style="color: white;"><small>Av de l'Anselm de Riu, 10, 08924 <br> Santa Coloma de Gramenet, Barcelona </small></p></li>
+             <li><p style="color: white;"><small>TLF. +34 933 91 61 11 </small></p></li>
+             <li><p style="color: white;"><small>Correo: glpi@elpuig.xeill.net </small></p></li>
+           </ul>
+         </div>
+         <div class="footer-col">
+           <h4>follow us</h4>
+           <div class="social-links">
+             <a href="https://www.facebook.com/p/Institut-Puig-Castellar-100064042952921/?locale=es_LA" target="_blank"><i class="fab fa-facebook-f"></i></a>
+             <a href="https://twitter.com/elpuigcastellar?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+             <a href="https://www.instagram.com/elpuigcastellar?igsh=aW0ycDM1cnNndDFq" target="_blank"><i class="fab fa-instagram"></i></a>
+             <a href="https://es.linkedin.com/company/elpuig" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+             <a href="https://elpuig.xeill.net/" target="_blank"><i class="fab fa-google"></i></a>
+           </div>
+         </div>
+       </div>
+      </div>
+      <br><br>
+      <div style="width: 90%; border: 0.5px solid white; border-radius: 10px; display: flex; justify-content: center; margin-left: 5%;"></div>
+      <br><br>
+      <p style="display: flex; justify-content: center; text-align: center; color: white;"> Copyright @ 2024 GLPI PUIG TICKET <br> Todos los derechos reservados </p>
+
+   </footer>
+   
+</body>
+</html>

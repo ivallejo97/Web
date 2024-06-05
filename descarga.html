@@ -45,7 +45,7 @@
 
 
     <div class="contenido-pagina">
-        <br>
+        <br><br><br>
         <h1>Descarga e instalación de GLPI</h1>
         <br><br><br>
         <img src="img/ubuntu.png" alt="" style="width: 450px; height: 120px;">
@@ -98,12 +98,16 @@
                     <br>
                     <p>3. Mueve los archivos de la carpeta Descargas a tu carpeta personal, lo puedes hacer con el siguiente comando: <br> <b>sudo mv glpi.zip /home/{nombre de usuario}/</b></p>
                     <br>
-                    <p>3. Descomprime los archivos, para hacerlo puedes usar el comando: <br> <b>tar -xzf {nombre fichero zip} </b> </p>
+                    <p>3. Descomprime los archivos, para hacerlo puedes usar el comando: <br> <b>unzip {nombre fichero zip} </b> <br> <b><small>Nota*:
+                      Una vez descomprimidos los ficheros estos se quedaran en la carpeta descarga, no los muevas de esa carpeta.
+                    </small></b> </p>
                     <br>
                     <img src="img/guia2.png" alt="">
                     <p>4. Asignale permisos de ejecución al script de instalación, para ello usa el siguiente comando: <br> <b> sudo chmod +x glpi.sh </b> </p>
                     <br>
-                    <p>5. Ejecuta el script de instalación con el siguiente comando: <br> <b>./glpi.sh</b> </p>
+                    <p>5. Ejecuta el script de instalación con el siguiente comando: <br> <b>./glpi.sh</b> <br> <b><small>Importante: Antes de ejecutar el script asegurate
+                      de que todos los ficheros se encuentren en la carpeta descarga descomprimida en el paso 3.
+                    </small></b></p>
                     <br>
                     <p>6. Espera a que se instale GLPI para poder usarlo, durante la instalación habra partes en las que deberas responder alguna 
                       pregunta, por ejemplo si quieres configurar el DNS , mantente atento durante la instalación</p>
